@@ -22,9 +22,9 @@
 
 ## 抓取字段
 
-| question_title | answer_url | author_name | fans_count | created_time | updated_time | comment_count | voteup_count | content  |
-| :------------: | :--------: | :---------: | :--------: | :----------: | :----------: | :-----------: | :----------: | :------: |
-|    问题名称    |  回答链接  |  作者昵称   |  粉丝数量  |   回答时间   | 最近修改时间 |   评论数量    |   赞同数量   | 回答文本 |
+| question_title | answer_url | author_name | fans_count | created_time | updated_time | comment_count | voteup_count |   content    |
+| :------------: | :--------: | :---------: | :--------: | :----------: | :----------: | :-----------: | :----------: | :----------: |
+|    问题名称    |  回答链接  |  作者昵称   |  粉丝数量  |   回答时间   | 最近修改时间 |   评论数量    |   赞同数量   | 回答文本内容 |
 
 ## 其他备注
 
@@ -33,4 +33,4 @@
 
 注：编程实现基于Python3.7
 
-**项目地址：**
+**项目地址：**https://github.com/Duguce/MyGadgets/tree/main/ZhihuSpider
