@@ -40,6 +40,6 @@ pip install -r requirements.txt
 | :------------: | :--------: | :---------: | :--------: | :----------: | :----------: | :-----------: | :----------: | :----------: |
 |    问题名称    |  回答链接  |  作者昵称   |  粉丝数量  |   回答时间   | 最近修改时间 |   评论数量    |   赞同数量   | 回答文本内容 |
 
+## 说明备注
 
-
-**项目地址：** https://github.com/Duguce/MyGadgets/tree/main/ZhihuSpider
+- 项目地址：https://github.com/Duguce/MyGadgets/tree/main/ZhihuSpider
