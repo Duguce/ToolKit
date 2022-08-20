@@ -2,7 +2,7 @@
 
 简易小项目，例如：中文文本情感分类、知乎爬虫...
 
-![Github stars](https://img.shields.io/github/stars/Duguce/MyGadgets.svg?color=orange#pic_left)![Github stars](https://img.shields.io/github/forks/Duguce/MyGadgets.svg?color=brightgreen#pic_left)![MIT协议](https://img.shields.io/badge/license-MIT-yellowgreen#pic_left)
+![Github stars](https://img.shields.io/github/stars/Duguce/MyGadgets.svg?color=orange#pic_left)      ![Github stars](https://img.shields.io/github/forks/Duguce/MyGadgets.svg?color=brightgreen#pic_left)      ![MIT协议](https://img.shields.io/badge/license-MIT-yellowgreen#pic_left)
 
 ## 项目文件
 
