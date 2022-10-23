@@ -9,6 +9,7 @@ import datetime
 import time, json, re
 import pandas as pd
 import config
+import random
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.service import Service
@@ -21,7 +22,7 @@ def get_html(url):
     # 浏览器最大化
     driver.maximize_window()
     driver.get(url)
-    time.sleep(2)
+    time.sleep(random.uniform(1, 2))
     # 定位登录界面关闭按钮
     close_btn = driver.find_element(By.XPATH, "//button[@class='Button Modal-closeButton Button--plain']")
     # 点击登录界面关闭按钮
@@ -115,12 +116,12 @@ if __name__ == '__main__':
             print("[NORMAL] 开始抓取该问题的回答...")
             answerData, question_title = get_answers(answerElementList)
             print(f"[NORMAL] 问题：【{question_title}】 的回答全部抓取完成...")
-            time.sleep(3)
+            time.sleep(random.uniform(1, 3))
             question_title = re.sub(r'[\W]', '', question_title)
             filename = str(f"result-{datetime.datetime.now().strftime('%Y-%m-%d')}-{question_title}")
             answerData.to_csv(f'{config.results_path}\{filename}.csv', encoding='utf-8', index=False)
             print(f"[NORMAL] 问题：【{question_title}】 的回答已经保存至 {filename}.xlsx...")
-            time.sleep(3)
+            time.sleep(random.uniform(1, 3))
             driver.close()
         except:
             print(f"[ERROR] 抓取失败...")

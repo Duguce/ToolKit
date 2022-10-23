@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 ## 使用方法
 
-- 将需要爬取的问题链接置于<u>config.py</u>中 ==> 运行<u>ZhihuSpider.py</u>
+- 下载对应浏览器的驱动并置于[Driver文件夹](./Driver)==> 将需要爬取的问题链接置于<u>config.py</u>中 ==> 运行<u>ZhihuSpider.py</u>
 
 ## 抓取字段
 
