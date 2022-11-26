@@ -1,0 +1,3 @@
+selenium==4.3.0
+requests==2.26.0
+fake-useragent==1.0.1

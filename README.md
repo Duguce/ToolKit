@@ -1,16 +1,17 @@
 # MyGadgets
 
-简易小项目，例如：中文文本情感分类、知乎爬虫...
+本仓库用于存储一些小程序。比如，知乎爬虫、股票爬虫、中文文本情感分类等
 
 ![Github stars](https://img.shields.io/github/stars/Duguce/MyGadgets.svg?color=orange#pic_left)       ![Github stars](https://img.shields.io/github/forks/Duguce/MyGadgets.svg?color=brightgreen#pic_left)       ![MIT协议](https://img.shields.io/badge/license-MIT-yellowgreen#pic_left)
 
 ## 项目文件
 
-| 序号 |     项目名称      |                        备注                        |
-| :--: | :---------------: | :------------------------------------------------: |
-|  1   | CN-SentiAnalysis  |         本项目可以实现进行中文文本情感分类         |
-|  2   | SentimentAnalysis |      本项目可以实现对微博评论进行情感判别分析      |
-|  3   |    ZhihuSpider    | 本项目可以实现对知乎某一问题下的所有回答信息的爬取 |
+| 序号 |     项目名称      |                             备注                             |
+| :--: | :---------------: | :----------------------------------------------------------: |
+|  1   | CN-SentiAnalysis  |              该项目可以实现进行中文文本情感分类              |
+|  2   | SentimentAnalysis |           该项目可以实现对微博评论进行情感判别分析           |
+|  3   |    ZhihuSpider    |      该项目可以实现对知乎某一问题下的所有回答信息的爬取      |
+|  4   |    StockSpider    | 该项目可以实现爬取某只股票或某个行业的所有股票的历史数据的爬取 |
 
 
 
