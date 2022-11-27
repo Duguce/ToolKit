@@ -26,6 +26,7 @@ def get_ind_url(url):
     url_dict_data = {}  # 定义字典用来存储行业股票列表网址
     driver = get_driver()
     driver.implicitly_wait(10)  # 隐式等待
+    driver.maximize_window()  # 浏览器最大化
     driver.get(url)
     logging.info(f"打开行业股票列表网址 {config.IND_URL}...")
     time.sleep(random.uniform(1, 2))
@@ -55,6 +56,7 @@ def get_stock_code(ind_url, ind_name):
     stock_code_data = {}  # 定义字典用来存储股票名称和代码
     driver = get_driver()
     driver.implicitly_wait(10)  # 隐式等待
+    driver.maximize_window()  # 浏览器最大化
     driver.get(ind_url)
     logging.info(f"打开 {ind_name} 行业股票详细信息网址 {ind_url}...")
     time.sleep(random.uniform(1, 2))
@@ -106,15 +108,17 @@ def get_all_code(ind_lst):
     all_industry_stock = {}
     for n in ind_lst:
         u = ind_lst[n]
+        time.sleep(random.uniform(1, 3))
         data = get_stock_code(u, n)
-        all_industry_stock.update(data)
+        # all_industry_stock.update(data)
+        all_industry_stock[n] = data
     save_to_json(all_industry_stock, 'all_industry_stock_list')
 
 
 if __name__ == '__main__':
     # get_ind_url(config.IND_URL)  # 获取各行业股票列表网址
     ind_lst = read_json('industry_list')
-    # get_all_code(ind_lst) # 获取所有行业的股票代码获取所有行业的股票代码
+    # get_all_code(ind_lst)  # 获取所有行业的股票代码获取所有行业的股票代码
     # 行业名称标准参见 http://quote.eastmoney.com/center/boardlist.html#industry_board
     ind_name = input("请输入需要获取个股代码列表的行业名称：\n")
     ind_url = ind_lst[ind_name]  # 获取行业个股列表的链接

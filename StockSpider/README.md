@@ -1,6 +1,6 @@
 # StockSpider
 
-股票历史数据爬虫：根据股票代码爬取股票在某一日期范围内的历史数据，可以爬取单个股票数据，也可以批量爬取某个行业的股票数据（目前仅于深市和沪市的股票）
+股票历史数据爬虫：根据股票代码爬取股票在某一日期范围内的历史数据，可以爬取单个股票数据，也可以批量爬取某个行业的股票数据（目前仅于深市和沪市的股票数据）
 
 ## 基本思路
 
@@ -11,7 +11,7 @@
 ```
 │  config.py # 配置文件，可以通过修改本文件中的配置信息爬取所需要的数据
 │  get_stock_code.py # 股票代码及股票名称爬取程序入口
-│  main.py # 个股历史数据爬取程序入口
+│  main.py # 股票爬虫主程序，即个股历史数据爬取程序入口
 │  README.md # 项目说明文档
 │  requirements.txt
 │
@@ -37,6 +37,13 @@ pip install -r requirements.txt
 ## 说明备注
 
 - 待做内容
-
-  \- [ ] 实现港股和美股的爬取功能
+  - [ ] 实现港股和美股的爬取功能；
+  - [ ] 实现某个行业整体的股价波动历史数据的爬取功能；
+  - [ ] 完善`get_industry_stock_data()`函数的功能，即实现一次性爬取所有行业的个股名称和对应代码。目前在爬取过程中会被挂掉，一种解决方法是增长休眠时间（不过这个方法太不优雅了），后续可以再改善一下。
+- 浏览器驱动下载地址
+  - Chrome：https://sites.google.com/chromium.org/driver/
+  - Edge：https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+  - Firefox：https://github.com/mozilla/geckodriver/releases
+  - Safari：https://webkit.org/blog/6900/webdriver-support-in-safari-10/
+- 项目地址：https://github.com/Duguce/MyGadgets/tree/main/StockSpider
 
