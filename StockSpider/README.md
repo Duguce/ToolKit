@@ -45,5 +45,5 @@ pip install -r requirements.txt
   - Edge：https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
   - Firefox：https://github.com/mozilla/geckodriver/releases
   - Safari：https://webkit.org/blog/6900/webdriver-support-in-safari-10/
-- 项目地址：https://github.com/Duguce/MyGadgets/tree/main/StockSpider
+- 项目地址：https://github.com/Duguce/ToolKit/tree/main/StockSpider
 

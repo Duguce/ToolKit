@@ -42,4 +42,4 @@ pip install -r requirements.txt
 
 ## 说明备注
 
-- 项目地址：https://github.com/Duguce/MyGadgets/tree/main/ZhihuSpider
+- 项目地址：https://github.com/Duguce/ToolKit/tree/main/ZhihuSpider

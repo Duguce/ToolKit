@@ -1,9 +1,9 @@
 <h1 align="center">
-    MyGadgets
+    ToolKit
 </h1>
 
 <p align="center">本仓库用于存储一些小脚本程序。比如，知乎爬虫、股票爬虫、中文文本情感分类等</p>
-<p align="center"><img src="https://img.shields.io/github/stars/Duguce/MyGadgets.svg?color=purple" alt="stars">&nbsp&nbsp&nbsp<img src="https://img.shields.io/github/forks/Duguce/MyGadgets.svg?color=red" alt="forks">&nbsp&nbsp&nbsp<img src="https://img.shields.io/badge/license-MIT-yellow" alt="MIT协议"></p>
+<p align="center"><img src="https://img.shields.io/github/stars/Duguce/ToolKit.svg?color=purple" alt="stars">&nbsp&nbsp&nbsp<img src="https://img.shields.io/github/forks/Duguce/ToolKit.svg?color=red" alt="forks">&nbsp&nbsp&nbsp<img src="https://img.shields.io/badge/license-MIT-yellow" alt="MIT协议"></p>
 
 
 ------
