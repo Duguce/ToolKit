@@ -9,17 +9,17 @@
 
 ## 项目结构
 
-| 序号 |                       项目名称                       | 类别 |                             备注                             |
-| :--: | :--------------------------------------------------: | :--: | :----------------------------------------------------------: |
-|  1   |        [CN-SentiAnalysis](./CN-SentiAnalysis)        | 辅助 |              该项目可以实现进行中文文本情感分类              |
-|  2   |       [SentimentAnalysis](./SentimentAnalysis)       | 辅助 |           该项目可以实现对微博评论进行情感判别分析           |
-|  3   |             [ZhihuSpider](./ZhihuSpider)             | 爬虫 |      该项目可以实现对知乎某一问题下的所有回答信息的爬取      |
-|  4   |             [StockSpider](./StockSpider)             | 爬虫 | 该项目可以实现爬取某只股票或某个行业的所有股票的历史数据的爬取 |
-|  5   |             [CutSentence](./CutSentence)             | 辅助 |       该项目可以实现对中英文文本以特定标点符号进行分句       |
-|  6   | [text_date_extraction.py](./text_date_extraction.py) | 脚本 |   该脚本可以实现从文本中提取英文日期，并将其转换为标准格式   |
-|  7   |         [change_date.bat](./change_date.bat)         | 脚本 |            该脚本可以实现在Windows上修改系统日期             |
-
-
+|      |                                                              |      |                          |
+| :--: | :----------------------------------------------------------: | :--: | :----------------------: |
+| 序号 |                           项目名称                           | 类别 |           备注           |
+|  1   | [CN-SentiAnalysis](https://chat.openai.com/c/CN-SentiAnalysis) | 辅助 |   中文文本情感分类工具   |
+|  2   | [SentimentAnalysis](https://chat.openai.com/c/SentimentAnalysis) | 辅助 |   微博评论情感判别分析   |
+|  3   |     [ZhihuSpider](https://chat.openai.com/c/ZhihuSpider)     | 爬虫 |   知乎问题回答信息爬取   |
+|  4   |     [StockSpider](https://chat.openai.com/c/StockSpider)     | 爬虫 |   股票历史数据爬取工具   |
+|  5   |     [CutSentence](https://chat.openai.com/c/CutSentence)     | 辅助 |      中英文分句工具      |
+|  6   | [text_date_extraction.py](https://chat.openai.com/c/text_date_extraction.py) | 脚本 |     英文日期提取工具     |
+|  7   | [change_date.bat](https://chat.openai.com/c/change_date.bat) | 脚本 |   修改Windows系统日期    |
+|  8   |        [JdSpider](https://chat.openai.com/c/JdSpider)        | 爬虫 | 京东评论问答数据爬取工具 |
 
 ## 使用说明
 
