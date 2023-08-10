@@ -9,9 +9,8 @@
 
 ## 项目结构
 
-|      |                                                              |      |                          |
-| :--: | :----------------------------------------------------------: | :--: | :----------------------: |
 | 序号 |                           项目名称                           | 类别 |           备注           |
+| :--: | :----------------------------------------------------------: | :--: | :----------------------: |
 |  1   | [CN-SentiAnalysis](https://chat.openai.com/c/CN-SentiAnalysis) | 辅助 |   中文文本情感分类工具   |
 |  2   | [SentimentAnalysis](https://chat.openai.com/c/SentimentAnalysis) | 辅助 |   微博评论情感判别分析   |
 |  3   |     [ZhihuSpider](https://chat.openai.com/c/ZhihuSpider)     | 爬虫 |   知乎问题回答信息爬取   |
