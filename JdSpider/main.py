@@ -9,4 +9,3 @@ from comment_spider import JDCommentSpider
 if __name__ == '__main__':
     spider = JDCommentSpider()
     spider.start_crawling()
-    print(spider.comm_data)

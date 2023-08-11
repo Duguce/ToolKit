@@ -15,7 +15,7 @@ import pandas as pd
 import requests
 from fake_useragent import UserAgent
 
-from config import comment_param, product_id
+from config import comment_param, product_id, MAX_WORKERS, DATA_PATH
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s: %(message)s')
 
@@ -27,11 +27,13 @@ class JDCommentSpider:
             columns=['user_id', 'user_name', 'content', 'create_time', 'score', 'location', 'product_id',
                      'product_name'])  # 商品评论数据
         self.comm_data_lock = threading.Lock()  # 线程锁
+        self.max_workers = MAX_WORKERS  # 最大线程数
         self.product_id = product_id  # 商品id
         self.pages = comment_param['pages']  # 爬取的页数
         self.score = comment_param['score']  # 评分
         self.sort_type = comment_param['sort_type']  # 排序方式
         self.page_size = comment_param['page_size']  # 每页放置评论数
+        self.data_path = DATA_PATH  # 数据存放路径
 
     def send_request(self, url):
         """
@@ -92,8 +94,11 @@ class JDCommentSpider:
         :param comm_data: 商品评论数据
         :return: None
         """
-        comm_data.to_csv('./jd_comments.csv', index=False, encoding='utf-8-sig')
-        logging.info(f"已保存商品ID为 {self.product_id} 的评论数据至文件...")
+        try:
+            comm_data.to_excel(f"{self.data_path}\jd_comments.xlsx", index=False)
+            logging.info(f"已保存商品ID为 {self.product_id} 的评论数据至文件...")
+        except Exception as e:
+            logging.error(f"保存商品ID为 {self.product_id} 的评论数据至文件失败，错误信息:{e}...")
 
     def crawl_page(self, page):
         """
@@ -114,7 +119,7 @@ class JDCommentSpider:
         """
         logging.info(f"正在开始抓取商品ID为 {self.product_id} 的评论数据...")
         # 使用线程池
-        with concurrent.futures.ThreadPoolExecutor(max_workers=30) as executor:  # 最大线程数为30
+        with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_workers) as executor:  # 最大线程数为30
             for page in range(self.pages):  # 爬取pages页
                 executor.submit(self.crawl_page, page)
 

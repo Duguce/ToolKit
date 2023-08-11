@@ -4,8 +4,13 @@
 # @Time    : 2023/8/10 11:53
 # @File    : config.py
 # @Software: PyCharm
+import os
+
+DATA_PATH = os.path.join(os.getcwd(), 'data')  # 数据存放路径
 
 product_id = 100038004397  # 商品id
+
+MAX_WORKERS = 30  # 最大线程数
 
 comment_param = {
     'pages': 100,  # 爬取的页数（京东限制最多只能抓取100页）
