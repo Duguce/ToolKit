@@ -5,7 +5,10 @@
 # @File    : main.py
 # @Software: PyCharm
 from comment_spider import JDCommentSpider
+from qa_spider import JDQASpider
 
 if __name__ == '__main__':
-    spider = JDCommentSpider()
-    spider.start_crawling()
+    # spider = JDCommentSpider()
+    # spider.start_crawling()
+    qa_spider = JDQASpider()
+    qa_spider.start_crawling()

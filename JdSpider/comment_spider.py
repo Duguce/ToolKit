@@ -15,7 +15,7 @@ import pandas as pd
 import requests
 from fake_useragent import UserAgent
 
-from config import comment_param, product_id, MAX_WORKERS, DATA_PATH
+from config import comment_param, MAX_WORKERS, DATA_PATH
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s: %(message)s')
 
@@ -28,7 +28,7 @@ class JDCommentSpider:
                      'product_name'])  # 商品评论数据
         self.comm_data_lock = threading.Lock()  # 线程锁
         self.max_workers = MAX_WORKERS  # 最大线程数
-        self.product_id = product_id  # 商品id
+        self.product_id = comment_param['product_id']  # 商品id
         self.pages = comment_param['pages']  # 爬取的页数
         self.score = comment_param['score']  # 评分
         self.sort_type = comment_param['sort_type']  # 排序方式

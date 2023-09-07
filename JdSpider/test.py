@@ -8,6 +8,8 @@
 import requests
 from fake_useragent import UserAgent
 
-
 headers = {'user-agent': UserAgent().random}
 print(headers)
+url = 'https://search.jd.com/Search?keyword=%E4%B9%A6%E5%8C%85&wq=%E4%B9%A6%E5%8C%85'
+response = requests.get(url, headers=headers)
+print(response.text)
