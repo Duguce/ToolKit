@@ -51,5 +51,5 @@ def get_industry_stock_data(ind_name):
 
 
 if __name__ == '__main__':
-    # download_single_stock_data(config.STOCK_NAME, config.STOCK_CODE)
-    get_industry_stock_data(config.IND_NAME)
+    download_single_stock_data(config.STOCK_NAME, config.STOCK_CODE)
+    # get_industry_stock_data(config.IND_NAME)
