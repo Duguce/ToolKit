@@ -9,16 +9,17 @@
 
 ## 项目结构
 
-| 序号 |                       项目名称                       | 类别 |           备注           |
-| :--: | :--------------------------------------------------: | :--: | :----------------------: |
-|  1   |        [CN-SentiAnalysis](./CN-SentiAnalysis)        | 辅助 |   中文文本情感分类工具   |
-|  2   |       [SentimentAnalysis](./SentimentAnalysis)       | 辅助 |   微博评论情感判别分析   |
-|  3   |             [ZhihuSpider](./ZhihuSpider)             | 爬虫 |   知乎问题回答信息爬取   |
-|  4   |             [StockSpider](./StockSpider)             | 爬虫 |   股票历史数据爬取工具   |
-|  5   |             [CutSentence](./CutSentence)             | 辅助 |      中英文分句工具      |
-|  6   | [text_date_extraction.py](./text_date_extraction.py) | 脚本 |     英文日期提取工具     |
-|  7   |         [change_date.bat](./change_date.bat)         | 脚本 |   修改Windows系统日期    |
-|  8   |                [JdSpider](./JdSpider)                | 爬虫 | 京东评论问答数据爬取工具 |
+| 序号 |                       项目名称                       | 类别 |         备注         |
+| :--: | :--------------------------------------------------: | :--: | :------------------: |
+|  1   |        [CN-SentiAnalysis](./CN-SentiAnalysis)        | 辅助 |   中文文本情感分类   |
+|  2   |       [SentimentAnalysis](./SentimentAnalysis)       | 辅助 | 微博评论情感判别分析 |
+|  3   |             [ZhihuSpider](./ZhihuSpider)             | 爬虫 | 知乎问题回答信息爬取 |
+|  4   |             [StockSpider](./StockSpider)             | 爬虫 |   股票历史数据爬取   |
+|  5   |             [CutSentence](./CutSentence)             | 辅助 |      中英文分句      |
+|  6   | [text_date_extraction.py](./text_date_extraction.py) | 脚本 |     英文日期提取     |
+|  7   |         [change_date.bat](./change_date.bat)         | 脚本 | 修改Windows系统日期  |
+|  8   |                [JdSpider](./JdSpider)                | 爬虫 | 京东评论问答数据爬取 |
+|  9   |                 [QuickQR](./QuickQR)                 | 脚本 |    二维码快捷生成    |
 
 ## 使用说明
 
